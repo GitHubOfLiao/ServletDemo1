@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_4_0.xsd"
+           version="4.0">
+
+    <servlet>
+        <servlet-name>hello</servlet-name>
+        <servlet-class>com.imooc.servlet.HelloServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>hello</servlet-name>
+        <url-pattern>/hi</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>sample</servlet-name>
+        <servlet-class>com.imooc.servlet.SampleServlet</servlet-class>
+        <load-on-startup>0</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>sample</servlet-name>
+        <url-pattern>/sample</url-pattern>
+    </servlet-mapping>
+
+<!--    <servlet>
+        <servlet-name>anno</servlet-name>
+        <servlet-class>com.imooc.servlet.AnnotationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>anno</servlet-name>
+        <url-pattern>/anno</url-pattern>
+    </servlet-mapping>-->
+
+    <servlet>
+        <servlet-name>loadon</servlet-name>
+        <servlet-class>com.imooc.servlet.LoadOnServlet</servlet-class>
+        <load-on-startup>2</load-on-startup>
+    </servlet>
+
+
+
+</web-app>

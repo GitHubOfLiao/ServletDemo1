@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>伪类选择器</title>
+    <style type="text/css">
+        p{height:30px;}
+        /*补充代码*/
+        a{
+            text-decoration: none;
+        }
+        a:link{
+            color:orange;
+        }
+        a:hover{
+            color:green;
+            font-size:20px;
+            border: 1px solid red;
+        }
+        p.suit:visited{
+            color:green;
+        }
+        p.wc:visited{
+            color:blue;
+        }
+        p.skin:visited{
+            color:purple;
+        }
+
+    </style>
+</head>
+<body>
+<h2>商品列表</h2>
+<p class="suit">
+    <a href="#">衣服鞋帽</a>
+</p>
+<p class="wc">
+    <a href="#">厕所清洁</a>
+</p>
+<p class="skin">
+    <a href="#">化妆用品</a>
+</p>
+</body>
+</html>
